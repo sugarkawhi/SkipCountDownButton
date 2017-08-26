@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="me.sugarkawhi.skipcountdownbutton.MainActivity">
+
+    <me.sugarkawhi.skipcountdownbutton.SkipCountDownButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        app:backgroundColor="@color/colorPrimary"
+        app:edgeColor="@color/colorPrimaryDark"
+        app:edgeWidth="5dp"
+        app:radius="25dp"
+        app:text="@string/just_so"
+        app:textColor="@color/colorAccent"
+        app:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <me.sugarkawhi.skipcountdownbutton.SkipCountDownButton
+            android:id="@+id/skipButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            app:backgroundColor="@color/translucent_black_35"
+            app:edgeColor="@color/colorAccent"
+            app:edgeWidth="2dp"
+            app:millisecond="1000"
+            app:radius="20dp"
+            app:text="@string/skip"
+            app:textSize="12sp" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="start"
+            android:text="@string/start" />
+    </LinearLayout>
+
+
+</LinearLayout>
